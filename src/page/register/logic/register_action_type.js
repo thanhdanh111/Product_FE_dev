@@ -1,0 +1,3 @@
+export const REGISTER_ACTION_TYPE = {
+    REGISTER : 'REGISTER'
+}
