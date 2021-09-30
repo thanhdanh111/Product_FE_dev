@@ -1,0 +1,5 @@
+export const LOGIN_ACTION_TYPE = {
+    LOGIN : 'LOGIN',
+    GETDATAUSER: 'GETDATAUSER',
+    LOGOUT : 'LOGOUT',
+}

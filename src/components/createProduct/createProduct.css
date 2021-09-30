@@ -1,0 +1,33 @@
+.input-style{
+    margin: 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.profile-img-holder{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    
+}
+.profile-img-holder img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.profile-container input{
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+}

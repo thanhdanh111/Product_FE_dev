@@ -1,9 +1,7 @@
 import React from 'react'
-
+import Home_UI from './UI/home_UI'
 export default function Home() {
     return (
-        <div>
-            home
-        </div>
+        <Home_UI />
     )
 }

@@ -3,9 +3,8 @@ import { URL } from "../../../helper/URL";
 import { pushNewNotifications } from "../../../redux/common/notification/notification_reducer";
 import { registerUser } from "./register_action";
 import { REGISTER_ACTION_TYPE } from "./register_action_type";
-
 const initialState = {
-  registerUser: {}
+  registerUser: false,
 }
 export const registerReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -38,10 +37,11 @@ export const registerThunkUser = (email, password)=> async (dispatch) => {
       if(res){
           dispatch(pushNewNotifications({variant: 'success', message: 'Register success'}))
           dispatch(registerUser(res?.data))
-          
       }
+
     }
     catch (err) {
+      console.log(err);
       dispatch(pushNewNotifications({variant: 'error', message: 'Register Failed'}))
     }
 

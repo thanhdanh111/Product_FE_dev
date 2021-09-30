@@ -5,7 +5,9 @@ import { makeStore } from "./redux/store";
 import App from "./utils/routers";
 
 ReactDOM.render(
-    <App/>,
+  <Provider store={makeStore()}>
+    <App />
+  </Provider>,
   document.getElementById("root")
 );
 

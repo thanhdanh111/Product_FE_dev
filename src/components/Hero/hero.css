@@ -1,0 +1,44 @@
+.hero-image{
+    background-image: linear-gradient(
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0, 0.5)), 
+    url("https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image .hero-text{
+    color: #fff;
+    text-align: center;
+}
+
+.hero-image .hero-text h1{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hero-image .hero-text p{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.hero-image .hero-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.hero-image .hero-btn:hover{
+    background: #fff;
+    color: #000;
+}
